@@ -1416,7 +1416,7 @@ h1, h2, h3, h4 {
 
 .services-track {
     display: flex;
-    overflow-x: auto;
+    overflow-x: hidden; /* Stop any scrolling unless button is clicked */
     gap: 1.5rem;
     padding-bottom: 2rem;
     scrollbar-width: none; /* Hide scrollbar completely */
@@ -1626,8 +1626,12 @@ h1, h2, h3, h4 {
         order: 2; /* Bottom-most */
     }
     .slider-btn {
-        display: none !important; /* Hide arrows on mobile, let users swipe */
+        width: 35px;
+        height: 35px;
+        font-size: 1.2rem;
     }
+    .prev-btn { left: -10px; }
+    .next-btn { right: -10px; }
     .hero-inner {
         grid-template-columns: 1fr;
     }
