@@ -243,8 +243,9 @@
 
     <section id="services" class="services">
         <div class="container services-layout">
+            <h2 class="section-title mobile-title-only" style="color: #ffffff !important;">Our Services</h2>
             <div class="services-sidebar">
-                <h2 class="section-title">CATEGORIES</h2>
+                <h2 class="section-title desktop-title-only">CATEGORIES</h2>
                 <ul class="services-categories">
                     <li><a href="#" class="active">All Services</a></li>
                     <li><a href="#">Web Development</a></li>
@@ -254,103 +255,108 @@
                     <li><a href="#">Poster Editing</a></li>
                     <li><a href="#">Video Editing</a></li>
                 </ul>
-                <div class="cto-sidebar-profile" data-aos="fade-up">
-                    <div class="coo-profile-card seamless-card" style="margin-top: 1rem; gap: 1rem;">
-                        <div class="coo-img-box mini-box">
-                            <img src="edwin.jpeg" alt="Edwin Rahul" class="coo-img">
-                        </div>
-                        <div class="coo-info" style="text-align: left; flex-shrink: 0;">
-                            <h4 style="white-space: nowrap; font-size: 1.25rem;">Edwin Rahul</h4>
-                            <p style="margin: 2px 0 8px;">CTO</p>
-                            <a href="#about" class="coo-learn-btn" style="padding: 0.4rem 1rem; white-space: nowrap; font-size: 0.8rem;">Learn More</a>
-                        </div>
-                    </div>
-                </div>
             </div>
             
-            <div class="services-track">
-                <!-- Service Cards -->
-                <div class="service-card-new">
-                    <div class="card-img-box">
-                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=80" alt="Web Development">
+            <div class="services-slider-wrapper">
+                <button class="slider-btn prev-btn" onclick="slideServices(-1)">&#10094;</button>
+                <div class="services-track" id="servicesSlider">
+                    <!-- Service Cards -->
+                    <div class="service-card-new">
+                        <div class="card-img-box">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=80" alt="Web Development">
+                        </div>
+                        <div class="card-info-box">
+                            <h3>Web Development</h3>
+                            <p>High-performance websites built with the latest technologies and responsive design.</p>
+                            <div class="card-footer">
+                                <span class="category">DEVELOPMENT</span>
+                                <button class="price">Explore</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-info-box">
-                        <h3>Web Development</h3>
-                        <p>High-performance websites built with the latest technologies and responsive design.</p>
-                        <div class="card-footer">
-                            <span class="category">DEVELOPMENT</span>
-                            <span class="price">Explore</span>
+                    
+                    <div class="service-card-new">
+                        <div class="card-img-box">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80" alt="App Development">
+                        </div>
+                        <div class="card-info-box">
+                            <h3>App Development</h3>
+                            <p>Native and cross-platform mobile applications that scale and perform seamlessly.</p>
+                            <div class="card-footer">
+                                <span class="category">DEVELOPMENT</span>
+                                <button class="price">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card-new">
+                        <div class="card-img-box">
+                            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=400&q=80" alt="UI & UX Designing">
+                        </div>
+                        <div class="card-info-box">
+                            <h3>UI & UX Designing</h3>
+                            <p>User-centric designs that are both beautiful and functionally intuitive.</p>
+                            <div class="card-footer">
+                                <span class="category">DESIGN</span>
+                                <button class="price">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card-new">
+                        <div class="card-img-box">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80" alt="Digital Marketing">
+                        </div>
+                        <div class="card-info-box">
+                            <h3>Digital Marketing</h3>
+                            <p>Strategic marketing campaigns to grow your brand and online presence.</p>
+                            <div class="card-footer">
+                                <span class="category">MARKETING</span>
+                                <button class="price">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card-new">
+                        <div class="card-img-box">
+                            <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=400&q=80" alt="Poster Editing">
+                        </div>
+                        <div class="card-info-box">
+                            <h3>Poster Editing</h3>
+                            <p>Stunning visuals, social media posts, and graphics tailored for your brand.</p>
+                            <div class="card-footer">
+                                <span class="category">CREATIVE</span>
+                                <button class="price">Explore</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card-new">
+                        <div class="card-img-box">
+                            <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=400&q=80" alt="Video Editing">
+                        </div>
+                        <div class="card-info-box">
+                            <h3>Video Editing</h3>
+                            <p>Professional video production, color grading, and captivating storytelling.</p>
+                            <div class="card-footer">
+                                <span class="category">CREATIVE</span>
+                                <button class="price">Explore</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="service-card-new">
-                    <div class="card-img-box">
-                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=400&q=80" alt="App Development">
+                <button class="slider-btn next-btn" onclick="slideServices(1)">&#10095;</button>
+            </div>
+            
+            <div class="cto-sidebar-profile" data-aos="fade-up">
+                <div class="coo-profile-card seamless-card" style="margin-top: 1rem; gap: 1rem;">
+                    <div class="coo-img-box mini-box">
+                        <img src="edwin.jpeg" alt="Edwin Rahul" class="coo-img">
                     </div>
-                    <div class="card-info-box">
-                        <h3>App Development</h3>
-                        <p>Native and cross-platform mobile applications that scale and perform seamlessly.</p>
-                        <div class="card-footer">
-                            <span class="category">DEVELOPMENT</span>
-                            <span class="price">Explore</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="service-card-new">
-                    <div class="card-img-box">
-                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=400&q=80" alt="UI & UX Designing">
-                    </div>
-                    <div class="card-info-box">
-                        <h3>UI & UX Designing</h3>
-                        <p>User-centric designs that are both beautiful and functionally intuitive.</p>
-                        <div class="card-footer">
-                            <span class="category">DESIGN</span>
-                            <span class="price">Explore</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="service-card-new">
-                    <div class="card-img-box">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80" alt="Digital Marketing">
-                    </div>
-                    <div class="card-info-box">
-                        <h3>Digital Marketing</h3>
-                        <p>Strategic marketing campaigns to grow your brand and online presence.</p>
-                        <div class="card-footer">
-                            <span class="category">MARKETING</span>
-                            <span class="price">Explore</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="service-card-new">
-                    <div class="card-img-box">
-                        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=400&q=80" alt="Poster Editing">
-                    </div>
-                    <div class="card-info-box">
-                        <h3>Poster Editing</h3>
-                        <p>Stunning visuals, social media posts, and graphics tailored for your brand.</p>
-                        <div class="card-footer">
-                            <span class="category">CREATIVE</span>
-                            <span class="price">Explore</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="service-card-new">
-                    <div class="card-img-box">
-                        <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=400&q=80" alt="Video Editing">
-                    </div>
-                    <div class="card-info-box">
-                        <h3>Video Editing</h3>
-                        <p>Professional video production, color grading, and captivating storytelling.</p>
-                        <div class="card-footer">
-                            <span class="category">CREATIVE</span>
-                            <span class="price">Explore</span>
-                        </div>
+                    <div class="coo-info" style="text-align: left; flex-shrink: 0;">
+                        <h4 style="white-space: nowrap; font-size: 1.25rem;">Edwin Rahul</h4>
+                        <p style="margin: 2px 0 8px;">CTO</p>
+                        <a href="#about" class="coo-learn-btn" style="padding: 0.4rem 1rem; white-space: nowrap; font-size: 0.8rem;">Learn More</a>
                     </div>
                 </div>
             </div>

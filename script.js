@@ -154,3 +154,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// Services Slider Logic
+window.slideServices = function(direction) {
+    const slider = document.getElementById('servicesSlider');
+    if (!slider) return;
+    
+    // Calculate card width dynamically (card width + gap)
+    const card = slider.querySelector('.service-card-new');
+    if (card) {
+        // 24px matches the 1.5rem gap in CSS
+        const scrollAmount = card.offsetWidth + 24; 
+        slider.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+    }
+};
