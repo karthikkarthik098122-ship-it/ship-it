@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Syro Tech Hub - Best IT Startup in India</title>
+    <meta name="description" content="Learn about Syro Tech Hub, a fast-growing IT startup in India. We specialize in Web Development, App Development, and premium IT Training services.">
+    <meta name="keywords" content="About Syro Tech Hub, IT Startup India, Best IT Company in Tamil Nadu, Web Development Company, Karthik Ayyathurai">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .about-hero {
+            padding: 3rem 2rem 0; /* Removed bottom padding */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #ffffff;
+            max-width: 100%;
+            margin: 0;
+            gap: 2rem;
+            min-height: auto;
+        }
+
+        .about-hero-left {
+            flex: 1;
+            text-align: left;
+            padding-left: 2rem;
+        }
+
+        .about-hero-left h1 {
+            font-size: 5rem;
+            font-weight: 800;
+            color: #0c0d21; /* Dark text for light background */
+            line-height: 1.1;
+            margin-bottom: 2rem;
+            letter-spacing: -2px;
+        }
+
+        .about-hero-logo {
+            width: 120px;
+            height: auto;
+            opacity: 0.9;
+        }
+
+        .about-hero-container {
+            flex: 1.2;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0); /* Keeping it clear */
+        }
+
+        /* Responsive Overrides */
+        @media (max-width: 768px) {
+            .about-hero {
+                flex-direction: column !important;
+                padding: 4rem 1rem 0 !important;
+                text-align: center !important;
+                gap: 2rem !important;
+            }
+            .about-hero-left {
+                padding: 0 !important;
+            }
+            .about-hero-left h1 {
+                font-size: 3rem !important;
+                letter-spacing: -1px !important;
+            }
+            .container {
+                flex-direction: column !important;
+                text-align: center !important;
+                gap: 2rem !important;
+            }
+            .our-mission, .our-dream {
+                padding: 3rem 1rem !important;
+            }
+            h2 { font-size: 2.2rem !important; }
+            .hero-video-side, .mission-video-side, .dream-video-side, .dream-text-side, .mission-text-side {
+                width: 100% !important;
+                padding: 0 !important;
+            }
+            .comparison-slider-section, #comparison-container {
+                height: 500px !important;
+                min-height: 500px !important;
+            }
+            .layer-red h2, #blue-layer h2 {
+                font-size: 1.8rem !important;
+            }
+            .layer-red div, #blue-layer div {
+                font-size: 1rem !important;
+                max-width: 90% !important;
+            }
+            #slider-handle {
+                transform: translate(-50%, 225px) !important;
+            }
+        }
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 0;
+        }
+
+        .about-hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            padding: 0 2rem;
+        }
+
+        .about-hero-content h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        .about-hero-content p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .about-hero {
+                padding-top: 110px !important; /* Increased to give breathing room from fixed navbar */
+                flex-direction: column !important;
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+                padding-bottom: 3rem !important;
+                text-align: center !important;
+                gap: 2rem !important;
+            }
+            .about-hero-left {
+                padding: 0 !important;
+            }
+            .about-hero-left h1 {
+                font-size: 2.8rem !important;
+                letter-spacing: -1px !important;
+                margin-top: 0 !important;
+            }
+            .navbar {
+                z-index: 10001 !important; /* Ensure navbar is top-most */
+            }
+            .navbar .container {
+                flex-direction: row !important; /* Keep navbar items horizontal */
+                justify-content: space-between !important;
+                align-items: center !important;
+            }
+            .nav-links {
+                z-index: 10000 !important;
+            }
+            .about-hero .container, .our-mission .container, .our-dream .container {
+                flex-direction: column !important;
+                text-align: center !important;
+                gap: 2rem !important;
+            }
+            .our-mission, .our-dream {
+                padding: 3rem 1rem !important;
+            }
+            h2 { font-size: 2.2rem !important; }
+            .hero-video-side, .mission-video-side, .dream-video-side, .dream-text-side, .mission-text-side, .about-hero-container {
+                width: 100% !important;
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+            .about-hero-video {
+                width: 100% !important;
+                height: auto !important;
+                display: block !important;
+            }
+            .comparison-slider-section, #comparison-container {
+                width: 100vw !important;
+                margin-left: calc(-50vw + 50%) !important;
+                height: 600px !important;
+                min-height: 600px !important;
+                padding: 0 !important;
+            }
+            .layer-red h2, #blue-layer h2 {
+                font-size: 1.8rem !important;
+            }
+            .layer-red div, #blue-layer div {
+                font-size: 1rem !important;
+                max-width: 95% !important;
+            }
+            #slider-handle {
+                transform: translate(-50%, 275px) !important;
+            }
+            .final-message {
+                padding: 4rem 1.5rem !important;
+            }
+            .final-message p {
+                font-size: 1.35rem !important;
+                line-height: 1.4 !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Syro Tech Hub Logo" id="nav-logo">
+                <span>Syro Tech Hub</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="join.html" class="btn-nav-red">Get Started</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero Section -->
+    <header class="about-hero">
+        <div class="about-hero-left" data-aos="fade-right">
+            <h2 style="font-size: 3rem; font-weight: 800; color: #0c0d21; margin-bottom: 1.5rem;">About Syro Tech Hub</h2>
+            <p style="font-size: 1.2rem; color: #555c81; line-height: 1.8; max-width: 500px;">
+                At Syro Tech Hub, we specialize in transforming ideas into powerful digital solutions. Our team is passionate about technology, creativity, and delivering results that truly matter for your business.
+            </p>
+        </div>
+
+        <div class="about-hero-container" data-aos="fade-left">
+            <!-- Background Video -->
+            <video autoplay muted loop playsinline class="about-hero-video">
+                <source src="abouthero.mp4" type="video/mp4">
+            </video>
+        </div>
+    </header>
+
+    <main style="padding: 0;">
+        <!-- Who We Are Section -->
+        <section class="who-we-are" style="background: #10b981; padding: 6rem 2rem; color: #ffffff; text-align: center;">
+            <div class="container" style="max-width: 900px; margin: 0 auto;">
+                <h2 style="font-size: 3rem; font-weight: 800; margin-bottom: 2rem; color: #ffffff;">Who We Are</h2>
+                <p style="font-size: 1.3rem; line-height: 1.8; opacity: 1;">
+                    We are a team of dedicated developers, designers, and marketing professionals who work together to create modern, high-quality digital products. Our goal is to build solutions that not only look great but also perform exceptionally.
+                </p>
+            </div>
+        </section>
+
+        <!-- Our Mission Section -->
+        <section class="our-mission" style="background: #ffffff; padding: 4rem 2rem 0;">
+            <div class="container" style="display: flex; align-items: center; justify-content: space-between; gap: 4rem; max-width: 1200px; margin: 0 auto; flex-direction: row-reverse;">
+                <div class="mission-text-side" style="flex: 1;" data-aos="fade-left">
+                    <h2 style="font-size: 3rem; font-weight: 800; color: #0c0d21; margin-bottom: 1.5rem;">Our Mission</h2>
+                    <p style="font-size: 1.2rem; color: #555c81; line-height: 1.8;">
+                        To empower businesses with innovative and reliable technology solutions that drive growth and success.
+                    </p>
+                </div>
+                <div class="mission-video-side" style="flex: 1.2;" data-aos="fade-right">
+                    <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block;">
+                        <source src="about2.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        <!-- Our Dream Section -->
+        <section class="our-dream" style="background: #ffffff; padding: 4rem 2rem 0;">
+            <div class="container" style="display: flex; align-items: center; justify-content: space-between; gap: 4rem; max-width: 1200px; margin: 0 auto;">
+                <div class="dream-text-side" style="flex: 1;" data-aos="fade-right">
+                    <h2 style="font-size: 3rem; font-weight: 800; color: #0c0d21; margin-bottom: 2rem;">Our Dream</h2>
+                    <div style="font-size: 1.25rem; color: #555c81; line-height: 1.8;">
+                        <p style="margin-bottom: 1.5rem;">Our dream is to take Syro Tech Hub to a global level and serve clients across the world.</p>
+                        <p style="margin-bottom: 1.5rem;">We aim to build solutions that go beyond boundaries and create impact internationally.</p>
+                        <p>Step by step, we are working towards reaching businesses worldwide and becoming a trusted global tech partner.</p>
+                    </div>
+                </div>
+                <div class="dream-video-side" style="flex: 1.2;" data-aos="fade-left">
+                    <video autoplay muted loop playsinline style="width: 100%; height: auto; display: block;">
+                        <source src="about3.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Comparison Slider Section -->
+        <section class="comparison-slider-section" style="width: 100%; position: relative; height: auto; min-height: 600px; overflow: hidden; background: #ffffff;">
+            <div id="comparison-container" style="position: relative; width: 100%; height: 600px; cursor: ew-resize; user-select: none;">
+                
+                <!-- Bottom Layer (Red: Why Choose Us) -->
+                <div class="layer-red" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #e80000; color: #ffffff; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 2rem;">
+                    <div style="max-width: 600px; width: 100%;"> 
+                        <h2 style="font-size: 3rem; font-weight: 800; margin-bottom: 2rem; color: #ffffff;">Why Choose Us</h2>
+                        <div style="display: flex; flex-direction: column; gap: 1.2rem; font-size: 1.25rem; text-align: left; max-width: 400px; margin: 0 auto;">
+                            <div style="padding: 0.6rem 0; border-bottom: 1px solid rgba(255,255,255,0.3);">&check; Friendly and professional team</div>
+                            <div style="padding: 0.6rem 0; border-bottom: 1px solid rgba(255,255,255,0.3);">&check; Clear communication</div>
+                            <div style="padding: 0.6rem 0; border-bottom: 1px solid rgba(255,255,255,0.3);">&check; Client-focused approach</div>
+                            <div style="padding: 0.6rem 0;">&check; Quality-driven work</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Top Layer (Blue: Our Approach) -->
+                <div id="blue-layer" style="position: absolute; top: 0; left: 0; width: 50%; height: 100%; background: #4F46E5; color: #ffffff; overflow: hidden; z-index: 2; border-right: 4px solid #ffffff;">
+                    <div style="position: absolute; top: 0; left: 0; width: 100vw; height: 100%; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 2rem;"> 
+                        <div style="max-width: 600px; width: 100%;">
+                            <h2 style="font-size: 3rem; font-weight: 800; margin-bottom: 2rem; color: #ffffff;">Our Approach</h2>
+                            <div style="display: flex; flex-direction: column; gap: 1.2rem; font-size: 1.25rem; text-align: left; max-width: 400px; margin: 0 auto;">
+                                <div style="padding: 0.6rem 0; border-bottom: 1px solid rgba(255,255,255,0.3);">&check; Understand your needs</div>
+                                <div style="padding: 0.6rem 0; border-bottom: 1px solid rgba(255,255,255,0.3);">&check; Plan the right solution</div>
+                                <div style="padding: 0.6rem 0; border-bottom: 1px solid rgba(255,255,255,0.3);">&check; Execute with quality</div>
+                                <div style="padding: 0.6rem 0;">&check; Deliver with transparency</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider Handle -->
+                <div id="slider-handle" style="position: absolute; top: 0; left: 50%; width: 50px; height: 50px; background: #ffffff; border-radius: 50%; transform: translate(-50%, 275px); z-index: 10; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 20px rgba(0,0,0,0.3); color: #4F46E5; font-weight: 900; pointer-events: none;">
+                    &harr;
+                </div>
+            </div>
+
+            <script>
+                const container = document.getElementById('comparison-container');
+                const blueLayer = document.getElementById('blue-layer');
+                const handle = document.getElementById('slider-handle');
+
+                let isDragging = false;
+
+                const onMove = (e) => {
+                    if (!isDragging) return;
+                    const rect = container.getBoundingClientRect();
+                    let x = (e.pageX || e.touches[0].pageX) - rect.left;
+                    if (x < 0) x = 0;
+                    if (x > rect.width) x = rect.width;
+                    
+                    const percentage = (x / rect.width) * 100;
+                    blueLayer.style.width = percentage + '%';
+                    handle.style.left = percentage + '%';
+                };
+
+                container.addEventListener('mousedown', () => isDragging = true);
+                window.addEventListener('mouseup', () => isDragging = false);
+                window.addEventListener('mousemove', onMove);
+
+                container.addEventListener('touchstart', () => isDragging = true);
+                window.addEventListener('touchend', () => isDragging = false);
+                window.addEventListener('touchmove', onMove);
+            </script>
+        </section>
+
+        <!-- Final Message Section -->
+        <section class="final-message" style="background: #f8fafc; padding: 6rem 2rem; text-align: center; position: relative; z-index: 5; opacity: 1 !important; visibility: visible !important; display: block !important;">
+            <div class="container" style="max-width: 900px; margin: 0 auto;">
+                <p style="font-size: 1.8rem; font-weight: 600; color: #0c0d21; line-height: 1.5; font-family: 'Outfit', sans-serif;">
+                    At Syro Tech Hub, we don’t just build projects — <span style="color: #4F46E5;">we build long-term relationships</span> and help your business grow.
+                </p>
+                <div style="width: 80px; height: 4px; background: #e80000; margin: 2rem auto; border-radius: 2px;"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-brand-name">
+                        <img src="logo.png" alt="Syro Tech Hub Logo" class="footer-logo">
+                        <span class="footer-brand-text">Syro Tech Hub</span>
+                    </div>
+                    <p class="footer-tagline">Building the digital future,<br>one line of code at a time.</p>
+                    <div class="footer-socials">
+                        <a href="https://www.instagram.com/syro.techhub.offi?igsh=a3U1MnNsNGJsMDE=" target="_blank" aria-label="Instagram" class="social-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/karthik-ayyathurai-b548a83a1?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" aria-label="LinkedIn" class="social-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        </a>
+                        <a href="https://youtube.com/@syrotechhub?si=eOvnhHRPf5x60IDU" target="_blank" aria-label="YouTube" class="social-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links-group">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="service.html">Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-group">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="service.html#specials">Web Development</a></li>
+                        <li><a href="service.html#specials">App Development</a></li>
+                        <li><a href="service.html#specials">UI &amp; UX Design</a></li>
+                        <li><a href="service.html#specials">Digital Marketing</a></li>
+                        <li><a href="service.html#specials">Video Editing</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-group">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="mailto:syrotechhub@gmail.com">syrotechhub@gmail.com</a></li>
+                        <li><a href="tel:8122696217">8122696217</a></li>
+                        <li style="color: rgba(255,255,255,0.7); font-size: 0.9rem; line-height: 1.4; margin-top: 5px;">
+                            12/338 T.V. Nagar, Paramakudi,<br>
+                            Ramanathapuram, Tamil Nadu,<br>
+                            India - 623707
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Syro Tech Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="join.html" class="whatsapp-float">
+        <svg fill="currentColor" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M12.031 6.172c-2.32 0-4.218 1.898-4.218 4.218 0 1.018.361 1.95.963 2.686l-.655 2.399 2.456-.644c.677.404 1.465.641 2.31.641 2.32 0 4.218-1.898 4.218-4.218 0-2.32-1.898-4.218-4.218-4.218zM15.424 12.82c-.156.44-1.286 1.139-1.286 1.139-.33.167-.714.286-1.125.286-1.045 0-2.433-1.012-3.232-1.811-.799-.799-1.811-2.187-1.811-3.232 0-.411.119-.795.286-1.125 0 0 .699-1.13.139-1.286-.44-.156-1.218-.088-1.574-.088-.415 0-.825.215-1.096.536-.464.551-.62 1.442-.26 2.404.646 1.72 2.228 3.734 3.793 5.299 1.565 1.565 3.579 3.147 5.299 3.793.962.36 1.853.204 2.404-.26.321-.271.536-.681.536-1.096 0-.356.068-1.134-.088-1.574-.156-.44-1.286-1.139-1.286-1.139-.33-.167-.714-.286-1.125-.286zM22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10z"/>
+        </svg>
+        <span>Join Us</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

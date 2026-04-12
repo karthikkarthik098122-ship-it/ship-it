@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Syro Tech Hub - Application Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: #f8fafc;
+            font-family: 'Outfit', sans-serif;
+            color: #0c0d21;
+        }
+
+        .form-container {
+            max-width: 800px;
+            margin: 4rem auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.05);
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .form-header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #0c0d21;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-header p {
+            color: #64748b;
+        }
+
+        .form-section {
+            margin-bottom: 2.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .form-section h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: #0070f3;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .grid-inputs {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.2rem;
+        }
+
+        .input-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .input-group input, .input-group select, .input-group textarea {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: #0070f3;
+            box-shadow: 0 0 0 4px rgba(0, 112, 243, 0.1);
+        }
+
+        .talent-questions {
+            display: none;
+            background: #f0f9ff;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-top: 1rem;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1.2rem;
+            background: #0070f3;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 1rem;
+        }
+
+        .submit-btn:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 112, 243, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .form-container {
+                margin: 2rem 1rem;
+                padding: 1.5rem;
+            }
+            .grid-inputs {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <div class="form-header">
+            <img src="logo.png" alt="Syro Tech Hub" style="height: 50px; margin-bottom: 1rem;">
+            <h1>Join Our Hub</h1>
+            <p>Fill out the form below to start your journey with us.</p>
+        </div>
+
+        <form id="joinForm">
+            <!-- Basic Information -->
+            <div class="form-section">
+                <h3>Basic Information</h3>
+                <div class="grid-inputs">
+                    <div class="input-group">
+                        <label>Full Name</label>
+                        <input type="text" name="name" required placeholder="John Doe">
+                    </div>
+                    <div class="input-group">
+                        <label>Age</label>
+                        <input type="number" name="age" required placeholder="20">
+                    </div>
+                    <div class="input-group">
+                        <label>Date of Birth</label>
+                        <input type="date" name="dob" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Father's Name</label>
+                        <input type="text" name="father_name" required placeholder="Father's Name">
+                    </div>
+                    <div class="input-group">
+                        <label>Gender</label>
+                        <select name="gender" required>
+                            <option value="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="others">Others</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>Address</label>
+                        <textarea name="address" rows="3" required placeholder="Enter your full address"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Qualification -->
+            <div class="form-section">
+                <h3>Qualification</h3>
+                <div class="grid-inputs">
+                    <div class="input-group">
+                        <label>School Name</label>
+                        <input type="text" name="school" required placeholder="Name of your School">
+                    </div>
+                    <div class="input-group">
+                        <label>College Name</label>
+                        <input type="text" name="college" required placeholder="Name of your College">
+                    </div>
+                    <div class="input-group">
+                        <label>Current Status</label>
+                        <select name="current_status" required>
+                            <option value="">Currently Studying?</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>Degree</label>
+                        <input type="text" name="degree" required placeholder="e.g. B.E CSE">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Identification & Contact -->
+            <div class="form-section">
+                <h3>Identification & contact</h3>
+                <div class="grid-inputs">
+                    <div class="input-group">
+                        <label>Aadhaar Number</label>
+                        <input type="text" name="aadhaar" required placeholder="12-digit Aadhaar">
+                    </div>
+                    <div class="input-group">
+                        <label>PAN Number</label>
+                        <input type="text" name="pan" required placeholder="10-digit PAN">
+                    </div>
+                    <div class="input-group">
+                        <label>Mobile Number (WhatsApp Preferred)</label>
+                        <input type="tel" name="mobile" required placeholder="9876543210">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Talent Specific Questions -->
+            <div class="form-section">
+                <h3>Your Talent</h3>
+                <div class="input-group">
+                    <label>Select Your Talent</label>
+                    <select name="talent" id="talentSelect" required onchange="showTalentQuestions()">
+                        <option value="">Select Talent</option>
+                        <option value="web">Web Developer</option>
+                        <option value="app">App Developer</option>
+                        <option value="uiux">UI/UX Designer</option>
+                        <option value="editing">Video Editing</option>
+                    </select>
+                </div>
+
+                <!-- Web Questions -->
+                <div id="webQuestions" class="talent-questions">
+                    <p style="font-weight: 700; margin-bottom: 1rem;">Web Developer Questions:</p>
+                    <div class="input-group"><label>1. HTML/CSS knowledge level (1-10)?</label><input type="text"></div>
+                    <div class="input-group"><label>2. Have you ever used React or Next.js?</label><input type="text"></div>
+                    <div class="input-group"><label>3. How many websites have you built?</label><input type="text"></div>
+                    <div class="input-group"><label>4. Can you work with animations and CSS?</label><input type="text"></div>
+                </div>
+
+                <!-- App Questions -->
+                <div id="appQuestions" class="talent-questions">
+                    <p style="font-weight: 700; margin-bottom: 1rem;">App Developer Questions:</p>
+                    <div class="input-group"><label>1. Android or iOS preferred?</label><input type="text"></div>
+                    <div class="input-group"><label>2. Experience with Flutter or React Native?</label><input type="text"></div>
+                    <div class="input-group"><label>3. Mention any app live on PlayStore.</label><input type="text"></div>
+                    <div class="input-group"><label>4. Experience with Firebase integration?</label><input type="text"></div>
+                </div>
+
+                <!-- UIUX Questions -->
+                <div id="uiuxQuestions" class="talent-questions">
+                    <p style="font-weight: 700; margin-bottom: 1rem;">UI/UX Designer Questions:</p>
+                    <div class="input-group"><label>1. Do you use Figma or Adobe XD?</label><input type="text"></div>
+                    <div class="input-group"><label>2. Can you create wireframes and prototypes?</label><input type="text"></div>
+                    <div class="input-group"><label>3. Link to your Portfolio (Behance/Dribbble).</label><input type="text"></div>
+                    <div class="input-group"><label>4. Knowledge of Typography and Color Theory?</label><input type="text"></div>
+                </div>
+
+                <!-- Editing Questions -->
+                <div id="editingQuestions" class="talent-questions">
+                    <p style="font-weight: 700; margin-bottom: 1rem;">Editing Questions:</p>
+                    <div class="input-group"><label>1. Which software do you use for editing?</label><input type="text"></div>
+                    <div class="input-group"><label>2. Have you worked on professional projects?</label><input type="text"></div>
+                    <div class="input-group"><label>3. Can you do color grading and sound design?</label><input type="text"></div>
+                    <div class="input-group"><label>4. Average time to edit a 5-min video?</label><input type="text"></div>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit & Join WhatsApp Group</button>
+        </form>
+    </div>
+
+    <script>
+        function showTalentQuestions() {
+            const talent = document.getElementById('talentSelect').value;
+            // Hide all
+            document.querySelectorAll('.talent-questions').forEach(q => q.style.display = 'none');
+            
+            // Show selected
+            if(talent === 'web') document.getElementById('webQuestions').style.display = 'block';
+            if(talent === 'app') document.getElementById('appQuestions').style.display = 'block';
+            if(talent === 'uiux') document.getElementById('uiuxQuestions').style.display = 'block';
+            if(talent === 'editing') document.getElementById('editingQuestions').style.display = 'block';
+        }
+
+        document.getElementById('joinForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Form submitted successfully! Redirecting to WhatsApp Group...');
+            window.location.href = "https://chat.whatsapp.com/DxAUMqebNJeGKLS1wmq0mD?mode=gi_t";
+        });
+    </script>
+</body>
+</html>

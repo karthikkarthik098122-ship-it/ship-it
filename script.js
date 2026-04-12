@@ -105,44 +105,55 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     `;
     document.head.appendChild(style);
-    // Achievements Counter Animation
-    const counterStats = document.querySelectorAll('.stat-number');
-    const animateCounters = () => {
-        counterStats.forEach(counter => {
+    // Generic Counter Animation
+    const animateCounters = (elements) => {
+        elements.forEach(counter => {
             const target = +counter.getAttribute('data-count');
-            const speed = 200; // Lower is faster
-            const inc = target / speed;
+            const duration = 2000; // 2 seconds
+            const stepTime = 20;
+            const steps = duration / stepTime;
+            const increment = target / steps;
+            let current = 0;
 
-            const updateCount = () => {
-                const count = +counter.innerText;
-                if (count < target) {
-                    counter.innerText = Math.ceil(count + inc);
-                    setTimeout(updateCount, 10);
+            const updateCount = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    clearInterval(updateCount);
+                    // Add suffix based on context
+                    const label = counter.nextElementSibling ? counter.nextElementSibling.innerText : '';
+                    if (label.includes('Satisfaction') || counter.closest('.achievements')) {
+                         counter.innerText = target + (label.includes('Satisfaction') ? '%' : '');
+                    } else {
+                         counter.innerText = target + '+';
+                    }
+                    // Specific override for reliability
+                    if (target === 100 && label.includes('Satisfaction')) counter.innerText = '100%';
+                    if (target === 100 && label.includes('Delivered')) counter.innerText = '100+';
+                    if (target === 50) counter.innerText = '50+';
                 } else {
-                    counter.innerText = target + (counter.parentElement.innerText.includes('%') ? '%' : '+');
+                    counter.innerText = Math.ceil(current);
                 }
-            };
-            updateCount();
+            }, stepTime);
         });
     };
 
-    // Use Intersection Observer to trigger when visible
-    const statsSection = document.querySelector('.achievements');
-    const statsObserverOptions = { threshold: 0.5 };
     const statsObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                animateCounters();
+                const counters = entry.target.querySelectorAll('.stat-number, .stat-num-bold');
+                animateCounters(counters);
                 statsObserver.unobserve(entry.target);
             }
         });
-    }, statsObserverOptions);
+    }, { threshold: 0.3 });
 
-    if (statsSection) statsObserver.observe(statsSection);
+    document.querySelectorAll('.achievements, .we-deliver').forEach(section => {
+        statsObserver.observe(section);
+    });
 
     // Hero Video Playlist Logic
     const videoPlayer = document.getElementById('hero-player');
-    const playlist = ['hero1.mp4', 'hero2.mp4', 'hero 3.mp4', 'hero 5.mp4', 'hero 6.mp4', 'hero 7.mp4', 'hero 8 .mp4', 'hero 9.mp4'];
+    const playlist = ['hero 1.mp4', 'hero2.mp4', 'hero 3.mp4', 'hero 5.mp4', 'hero 6.mp4', 'hero 7.mp4', 'hero 8 .mp4', 'hero 9.mp4'];
     let currentVideoIndex = 0;
 
     if (videoPlayer) {
@@ -155,16 +166,64 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Services Slider Logic
+// Services Slider & Filter Logic
 window.slideServices = function(direction) {
     const slider = document.getElementById('servicesSlider');
     if (!slider) return;
     
     // Calculate card width dynamically (card width + gap)
-    const card = slider.querySelector('.service-card-new');
+    const card = slider.querySelector('.service-card-new:not(.hidden-item)');
     if (card) {
-        // 24px matches the 1.5rem gap in CSS
         const scrollAmount = card.offsetWidth + 24; 
         slider.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
     }
 };
+
+window.filterServices = function(category, btn) {
+    // Update active button state
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const cards = document.querySelectorAll('.service-card-new');
+    const slider = document.getElementById('servicesSlider');
+    
+    cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+            card.classList.remove('hidden-item');
+        } else {
+            card.classList.add('hidden-item');
+        }
+    });
+
+    // Reset slider position to start when filtering
+    if (slider) slider.scrollLeft = 0;
+};
+
+// Scrollbar Thumb Progress
+document.addEventListener('DOMContentLoaded', () => {
+    const slider = document.getElementById('servicesSlider');
+    const thumb = document.getElementById('sliderThumb');
+
+    if (slider && thumb) {
+        const scrollbarContainer = thumb.parentElement;
+        
+        slider.addEventListener('scroll', () => {
+            const maxScroll = slider.scrollWidth - slider.clientWidth;
+            if (maxScroll <= 5) {
+                if (scrollbarContainer) scrollbarContainer.style.opacity = '0';
+                return;
+            }
+            
+            if (scrollbarContainer) scrollbarContainer.style.opacity = '1';
+            
+            const scrollPercentage = (slider.scrollLeft / maxScroll) * 100;
+            const thumbWidth = (slider.clientWidth / slider.scrollWidth) * 100;
+            
+            thumb.style.width = thumbWidth + '%';
+            thumb.style.left = (scrollPercentage * (100 - thumbWidth) / 100) + '%';
+        });
+
+        // Trigger once to set initial state
+        slider.dispatchEvent(new Event('scroll'));
+    }
+});

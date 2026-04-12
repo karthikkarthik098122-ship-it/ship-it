@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karthik Ayyathurai | Founder & CEO of Syro Tech Hub</title>
+    <meta name="description" content="Read the inspiring life story of Karthik Ayyathurai, the Founder & CEO of Syro Tech Hub, a fast-growing IT startup in Tamil Nadu.">
+    <meta name="keywords" content="Karthik Ayyathurai, Syro Tech Hub founder, Who is Karthik Ayyathurai, Best IT startup founder India, Karthik Paramakudi, CEO Syro Tech Hub">
+    
+    <!-- Structured Data Schema for AI & Google Search -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Karthik Ayyathurai",
+        "jobTitle": "Founder & CEO",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Syro Tech Hub"
+        },
+        "description": "Karthik Ayyathurai is the Founder & CEO of Syro Tech Hub, a fast-growing IT startup in India. He was born on April 2nd in Paramakudi and studied B.Com at Government Arts College."
+      }
+    }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f3f2ef; /* LinkedIn background color */
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 2rem 1rem;
+            color: #000000;
+        }
+
+        .profile-card {
+            background: white;
+            border-radius: 8px;
+            max-width: 780px;
+            margin: 0 auto;
+            border: 1px solid #e0dfdc;
+            overflow: hidden;
+        }
+
+        .profile-banner {
+            height: 200px;
+            background-image: url('founder67.jpeg');
+            background-size: 100% 100%; /* Shows the full image without cropping */
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .profile-top {
+            padding: 0 1.5rem 1.5rem;
+            position: relative;
+        }
+
+        .profile-avatar {
+            width: 152px;
+            height: 152px;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            object-fit: cover;
+            object-position: top;
+            margin-top: -112px;
+            position: relative;
+            z-index: 2;
+            background: white;
+        }
+
+        .profile-actions {
+            display: flex;
+            justify-content: flex-end;
+            gap: 0.5rem;
+            margin-top: -40px;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            font-family: inherit;
+            border-radius: 16px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.2s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-primary {
+            background-color: #0a66c2;
+            color: white;
+            border: 1px solid #0a66c2;
+            padding: 0.35rem 1rem;
+        }
+
+        .btn-primary:hover {
+            background-color: #004182;
+            border-color: #004182;
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: #0a66c2;
+            border: 1px solid #0a66c2;
+            padding: 0.35rem 1rem;
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(10, 102, 194, 0.1);
+            border-width: 2px;
+            padding: 0.28rem 0.93rem; /* adjust to prevent size jump */
+        }
+
+        .btn-tertiary {
+            background-color: transparent;
+            color: #666666;
+            border: 1px solid #666666;
+            padding: 0.35rem 1rem;
+        }
+        
+        .btn-tertiary:hover {
+            background-color: rgba(0, 0, 0, 0.05);
+            border-width: 2px;
+            padding: 0.28rem 0.93rem;
+        }
+
+        .profile-name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 0.5rem 0 0 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .profile-title {
+            font-size: 1rem;
+            color: #000000;
+            margin: 0.2rem 0;
+        }
+
+        .profile-location {
+            font-size: 0.9rem;
+            color: #666666;
+            margin-top: 0.2rem;
+        }
+
+        .profile-location a {
+            color: #0a66c2;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .profile-location a:hover {
+            text-decoration: underline;
+        }
+
+        .company-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #000000;
+            text-decoration: none;
+            float: right;
+            margin-top: -65px;
+        }
+
+        .company-link img {
+            width: 32px;
+            height: 32px;
+            border-radius: 0;
+            background: #fff;
+            padding: 2px;
+        }
+
+        .company-link:hover {
+            color: #0a66c2;
+            text-decoration: underline;
+        }
+
+        .about-section {
+            padding: 1.5rem;
+            border-top: 1px solid #e0dfdc;
+        }
+
+        .about-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            margin-top: 0;
+        }
+
+        .about-text {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #000000;
+            white-space: pre-wrap;
+        }
+
+        .button-icon {
+            margin-right: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .profile-actions {
+                flex-wrap: wrap;
+                margin-top: 1rem;
+                justify-content: flex-start;
+            }
+            .company-link {
+                float: none;
+                margin-top: 1rem;
+                display: inline-flex;
+            }
+            .profile-banner::after {
+                font-size: 1.5rem;
+                letter-spacing: 2px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <div class="profile-banner"></div>
+        
+        <div class="profile-top">
+            <img src="founder.jpeg" alt="Karthik" class="profile-avatar">
+            
+
+
+
+
+            <h1 class="profile-name">Karthik <span style="font-size: 1rem; color: #666; font-weight: 400;"> • 1st</span></h1>
+            <p class="profile-title">Founder & CEO at Syro Tech Hub</p>
+            <p class="profile-location">Paramakudi, Tamil Nadu, India • 500+ connections • <a href="mailto:syrotechhub@gmail.com">Contact info</a></p>
+        </div>
+
+        <div class="about-section">
+            <h2 class="about-title">About</h2>
+            
+            <div class="about-text">My name is Karthik. I was born on April 2nd. I am from Paramakudi, Ramanathapuram. I completed my schooling at a higher secondary school in Paramakudi and pursued a Bachelor of Commerce (B.Com) degree at Government Arts College.
+
+After completing my studies, I worked for about a year at a fraud company. During my time there, I worked as a co-founder, but unfortunately, I faced a major disappointment. I was not given what I deserved and was eventually let down by the company. That experience became a turning point in my life.
+
+Instead of giving up, I decided to take a bold step. I realized that many people like me had faced similar situations, so I wanted to create something better. I formed a team and met Edwin and Dinesh, who shared the same vision. Along with them, I decided to start a startup of our own.
+
+That is how Syro Tech Hub was born.
+
+One of the biggest supports in starting this journey was Vaishnavi, who had also worked at the same company and faced similar challenges. Among everyone, Vaishnavi played a very important role in helping me build Syro Tech Hub.
+
+Coming from a financially struggling background, I always had the dream of achieving something big in life. That struggle motivated me to start this company. My goal with Syro Tech Hub is to provide opportunities to talented individuals and support people who deserve a chance to grow.
+
+I also wanted to offer high-quality project services at a more affordable cost compared to other companies, making it accessible for everyone.
+
+My vision is to expand this startup across different districts and eventually take it to a global level by opening branches in multiple countries.
+
+Even today, I come across people from the same company that once disappointed me, but I no longer give them importance because I have moved forward with a bigger purpose.
+
+This is my life story and the journey behind Syro Tech Hub.</div>
+        </div>
+        
+        <div style="text-align: center; padding: 1.5rem; border-top: 1px solid #e0dfdc; background: #fff;">
+            <a href="index.html" class="btn" style="background-color: #ff0000; color: white; border: none; padding: 0.8rem 2.5rem; font-size: 1.1rem; border-radius: 50px; font-weight: 700; box-shadow: 0 4px 15px rgba(255, 0, 0, 0.2);">Return</a>
+        </div>
+    </div>
+
+</body>
+</html>
