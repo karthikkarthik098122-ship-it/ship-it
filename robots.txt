@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://syrotechhub.com/sitemap.xml
+Sitemap: https://syrotechhub.in/sitemap.xml
