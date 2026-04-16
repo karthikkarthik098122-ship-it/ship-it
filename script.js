@@ -1,4 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Splash Screen Logic (Using window 'load' for full resource loading)
+    window.addEventListener('load', () => {
+        const splashScreen = document.getElementById('splash-screen');
+        if (splashScreen) {
+            setTimeout(() => {
+                splashScreen.classList.add('splash-hidden');
+            }, 3500); // Increased to 3.5s for the cinematic logo reveal transition
+        }
+    });
+
     // Mobile Menu Toggle
     const mobileMenu = document.getElementById('mobile-menu');
     const navLinks = document.querySelector('.nav-links');

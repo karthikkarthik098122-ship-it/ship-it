@@ -798,6 +798,118 @@ h1, h2, h3, h4 {
 }
 
 /* Red Learn More Button */
+
+/* Splash Screen Styles */
+#splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+.splash-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* 3 rings in a horizontal row */
+.splash-rings {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.splash-ring {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: transparent;
+    border: 5px solid transparent;
+    opacity: 0.15;
+}
+
+/* Blue ring - glows first */
+.ring-blue {
+    border-color: #0070f3;
+    animation: ringGlow 2.4s ease-in-out infinite;
+    animation-delay: 0s;
+}
+
+/* Purple ring - glows second */
+.ring-purple {
+    border-color: #a855f7;
+    animation: ringGlow 2.4s ease-in-out infinite;
+    animation-delay: 0.8s;
+}
+
+/* Green ring - glows third */
+.ring-green {
+    border-color: #10b981;
+    animation: ringGlow 2.4s ease-in-out infinite;
+    animation-delay: 1.6s;
+}
+
+/* The "rise and glow" keyframe */
+@keyframes ringGlow {
+    0% {
+        opacity: 0.15;
+        transform: translateY(0px);
+        filter: drop-shadow(0 0 0px transparent);
+    }
+    30% {
+        opacity: 1;
+        transform: translateY(-10px);
+        filter: drop-shadow(0 0 18px currentColor);
+    }
+    60% {
+        opacity: 0.15;
+        transform: translateY(0px);
+        filter: drop-shadow(0 0 0px transparent);
+    }
+    100% {
+        opacity: 0.15;
+        transform: translateY(0px);
+    }
+}
+
+/* Loading text */
+.splash-loading-text {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.4);
+    animation: loadingPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes loadingPulse {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 1; }
+}
+
+/* Exit */
+.splash-hidden {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none;
+}
+
+
+
+
 .btn-red-outline {
     display: inline-block;
     padding: 0.8rem 1.8rem;
