@@ -22,17 +22,23 @@
     box-sizing: border-box;
 }
 
+/* ===== PERFORMANCE OPTIMIZATION ===== */
 html {
     scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 
 body {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Outfit', 'Inter', -apple-system, sans-serif;
     font-weight: 400;
     background-color: var(--bg-dark);
     color: var(--text-main);
     line-height: 1.6;
     overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4 {

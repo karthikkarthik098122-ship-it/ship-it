@@ -1,4 +1,29 @@
+# ===== Syro Tech Hub - robots.txt =====
+# Website: https://syrotechhub.in
+# Company: Syro Tech Hub | Best IT Company Tamil Nadu
+# Contact: syrotechhub@gmail.com
+
 User-agent: *
 Allow: /
 
+# Specifically Allow AI Crawlers for ChatGPT and Gemini
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Allow: /*.html
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.mp4
+Allow: /sitemap.xml
+
+# Sitemaps
 Sitemap: https://syrotechhub.in/sitemap.xml

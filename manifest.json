@@ -1,0 +1,21 @@
+{
+  "name": "Syro Tech Hub",
+  "short_name": "Syro",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0c0d21",
+  "theme_color": "#0c0d21",
+  "description": "Best IT Company in Tamil Nadu offering Web Development, App Development, and Training.",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

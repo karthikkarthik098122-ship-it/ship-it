@@ -1,48 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>https://syrotechhub.in/</loc>
+        <lastmod>2026-04-18</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://syrotechhub.in/logo.png</image:loc>
+            <image:title>Syro Tech Hub - Best IT Company Tamil Nadu Logo</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://syrotechhub.in/hero.png</image:loc>
+            <image:title>Syro Tech Hub Homepage Hero Image</image:title>
+        </image:image>
     </url>
     <url>
         <loc>https://syrotechhub.in/index.html</loc>
+        <lastmod>2026-04-18</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://syrotechhub.in/about.html</loc>
+        <lastmod>2026-04-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://syrotechhub.in/service.html</loc>
+        <lastmod>2026-04-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://syrotechhub.in/join.html</loc>
+        <lastmod>2026-04-18</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
         <loc>https://syrotechhub.in/founder.html</loc>
+        <lastmod>2026-04-18</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://syrotechhub.in/founder.jpeg</image:loc>
+            <image:title>Karthik Ayyathurai - Founder and CEO of Syro Tech Hub</image:title>
+        </image:image>
     </url>
     <url>
         <loc>https://syrotechhub.in/vaishnavi.html</loc>
+        <lastmod>2026-04-18</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.6</priority>
+        <image:image>
+            <image:loc>https://syrotechhub.in/vaishnavi.jpeg</image:loc>
+            <image:title>Vaishnavi M - COO of Syro Tech Hub</image:title>
+        </image:image>
     </url>
     <url>
         <loc>https://syrotechhub.in/dinesh.html</loc>
+        <lastmod>2026-04-18</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.6</priority>
+        <image:image>
+            <image:loc>https://syrotechhub.in/dinesh.jpeg</image:loc>
+            <image:title>Dinesh - CMO of Syro Tech Hub</image:title>
+        </image:image>
     </url>
     <url>
         <loc>https://syrotechhub.in/edwin.html</loc>
+        <lastmod>2026-04-18</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://syrotechhub.in/join.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://syrotechhub.in/edwin.jpeg</image:loc>
+            <image:title>Edwin Rakhul - CTO of Syro Tech Hub</image:title>
+        </image:image>
     </url>
 </urlset>
