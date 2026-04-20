@@ -16,14 +16,37 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
+# Allow all assets
 Allow: /*.html
 Allow: /*.css
 Allow: /*.js
 Allow: /*.png
 Allow: /*.jpg
 Allow: /*.jpeg
+Allow: /*.webp
+Allow: /*.gif
 Allow: /*.mp4
 Allow: /sitemap.xml
+Allow: /favicon.ico
+Allow: /favicon.png
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
 
 # Sitemaps
 Sitemap: https://syrotechhub.in/sitemap.xml
