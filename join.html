@@ -78,14 +78,16 @@
         }
 
         .form-header h1 {
-            font-size: 2.5rem;
-            font-weight: 800;
+            font-size: 1.8rem;
+            font-weight: 600;
             color: #0c0d21;
             margin-bottom: 0.5rem;
         }
 
         .form-header p {
             color: #64748b;
+            font-size: 0.9rem;
+            font-weight: 400;
         }
 
         .form-section {
@@ -95,39 +97,45 @@
         }
 
         .form-section h3 {
-            font-size: 1.2rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            color: #0070f3;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+            display: none;
         }
 
         .grid-inputs {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1.2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
         }
 
         .input-group {
-            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            gap: 1rem;
         }
 
         .input-group label {
-            display: block;
-            margin-bottom: 0.5rem;
+            flex: 0 0 35%;
+            text-align: left;
+            margin-bottom: 0;
             font-weight: 600;
-            font-size: 0.95rem;
+            font-size: 0.85rem;
+        }
+
+        .input-group label::after {
+            content: " :";
         }
 
         .input-group input, .input-group select, .input-group textarea {
+            flex: 1;
             width: 100%;
             padding: 0.8rem 1rem;
             border: 1px solid #e2e8f0;
             border-radius: 10px;
             font-family: inherit;
-            font-size: 1rem;
+            font-size: 0.9rem;
+            font-weight: 400;
             transition: 0.3s;
+            text-align: left;
         }
 
         .input-group input:focus {
@@ -144,6 +152,23 @@
             margin-top: 1rem;
         }
 
+        .talent-questions .input-group {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .talent-questions .input-group label {
+            flex: none;
+            width: 100%;
+            text-align: left;
+        }
+
+        .talent-questions .input-group label::after {
+            content: "";
+        }
+
         .submit-btn {
             width: 100%;
             padding: 1.2rem;
@@ -151,8 +176,8 @@
             color: white;
             border: none;
             border-radius: 12px;
-            font-size: 1.1rem;
-            font-weight: 700;
+            font-size: 1rem;
+            font-weight: 600;
             cursor: pointer;
             transition: 0.3s;
             margin-top: 1rem;
@@ -179,9 +204,8 @@
 
     <div class="form-container">
         <div class="form-header">
-            <img src="logo.png" alt="Syro Tech Hub - Official Logo" title="Join Syro Tech Hub" style="height: 50px; margin-bottom: 1rem;">
-            <h1>Partner with the Best IT Company in Chennai</h1>
-            <p>Ready to start your professional journey? Apply to join the <strong>Syro Tech Hub</strong> team or training program and build your future in IT.</p>
+            <img src="logo.png" alt="Syro Tech Hub - Official Logo" title="Join Syro Tech Hub" style="height: 120px; margin-bottom: 1.5rem;">
+            <h1>Registration Form</h1>
         </div>
 
         <form id="joinForm">
@@ -191,7 +215,7 @@
                 <div class="grid-inputs">
                     <div class="input-group">
                         <label>Full Name</label>
-                        <input type="text" name="name" required placeholder="John Doe">
+                        <input type="text" name="name" required placeholder="Enter your name">
                     </div>
                     <div class="input-group">
                         <label>Age</label>
@@ -283,7 +307,7 @@
 
                 <!-- Web Questions -->
                 <div id="webQuestions" class="talent-questions">
-                    <p style="font-weight: 700; margin-bottom: 1rem;">Web Developer Questions:</p>
+                    <p style="font-weight: 600; font-size: 0.9rem; margin-bottom: 1rem; text-align: center;">Web Developer Questions:</p>
                     <div class="input-group"><label>1. HTML/CSS knowledge level (1-10)?</label><input type="text"></div>
                     <div class="input-group"><label>2. Have you ever used React or Next.js?</label><input type="text"></div>
                     <div class="input-group"><label>3. How many websites have you built?</label><input type="text"></div>
@@ -292,7 +316,7 @@
 
                 <!-- App Questions -->
                 <div id="appQuestions" class="talent-questions">
-                    <p style="font-weight: 700; margin-bottom: 1rem;">App Developer Questions:</p>
+                    <p style="font-weight: 600; font-size: 0.9rem; margin-bottom: 1rem; text-align: center;">App Developer Questions:</p>
                     <div class="input-group"><label>1. Android or iOS preferred?</label><input type="text"></div>
                     <div class="input-group"><label>2. Experience with Flutter or React Native?</label><input type="text"></div>
                     <div class="input-group"><label>3. Mention any app live on PlayStore.</label><input type="text"></div>
@@ -301,7 +325,7 @@
 
                 <!-- UIUX Questions -->
                 <div id="uiuxQuestions" class="talent-questions">
-                    <p style="font-weight: 700; margin-bottom: 1rem;">UI/UX Designer Questions:</p>
+                    <p style="font-weight: 600; font-size: 0.9rem; margin-bottom: 1rem; text-align: center;">UI/UX Designer Questions:</p>
                     <div class="input-group"><label>1. Do you use Figma or Adobe XD?</label><input type="text"></div>
                     <div class="input-group"><label>2. Can you create wireframes and prototypes?</label><input type="text"></div>
                     <div class="input-group"><label>3. Link to your Portfolio (Behance/Dribbble).</label><input type="text"></div>
@@ -310,7 +334,7 @@
 
                 <!-- Editing Questions -->
                 <div id="editingQuestions" class="talent-questions">
-                    <p style="font-weight: 700; margin-bottom: 1rem;">Editing Questions:</p>
+                    <p style="font-weight: 600; font-size: 0.9rem; margin-bottom: 1rem; text-align: center;">Editing Questions:</p>
                     <div class="input-group"><label>1. Which software do you use for editing?</label><input type="text"></div>
                     <div class="input-group"><label>2. Have you worked on professional projects?</label><input type="text"></div>
                     <div class="input-group"><label>3. Can you do color grading and sound design?</label><input type="text"></div>

@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <link id="manifest-link" rel="manifest" href="manifest.json">
     <!-- ===== FAVICON OPTIMIZATION FOR GOOGLE SEARCH ===== -->
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
-    <link rel="shortcut icon" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://syrotechhub.in/favicon.png?v=3">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://syrotechhub.in/favicon.png?v=3">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://syrotechhub.in/favicon.png?v=3">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://syrotechhub.in/favicon.png?v=3">
+    <link rel="shortcut icon" href="https://syrotechhub.in/favicon.png?v=3">
     <!-- ===== TITLE OPTIMIZATION ===== -->
     <title>Syro Tech Hub | #1 IT Company in Chennai & India | Software Development</title>
     <link rel="canonical" href="https://syrotechhub.in/">
@@ -231,14 +231,21 @@
     <!-- Splash Screen -->
     <div id="splash-screen">
         <div class="splash-content">
-            <img src="logo.png" alt="Syro Tech Hub" style="height: 80px;">
+            <!-- Glowing Rings -->
+            <div class="splash-rings">
+                <div class="splash-ring ring-blue"></div>
+                <div class="splash-ring ring-purple"></div>
+                <div class="splash-ring ring-green"></div>
+            </div>
+            <!-- Loading Text -->
+            <p class="splash-loading-text">Loading...</p>
         </div>
     </div>
     <h1 style="position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(1px, 1px, 1px, 1px);">Syro Tech Hub - Best IT Company in Chennai & India | Software & Web Development Company</h1>
     <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <img src="logo.png" alt="Syro Tech Hub - Top Software Company in Chennai & India" title="Syro Tech Hub Official Logo" id="nav-logo" style="height:85px;width:auto;">
+                <img src="logo.png" alt="Syro Tech Hub - Top Software Company in Chennai & India" title="Syro Tech Hub Official Logo" id="nav-logo" style="height:52px;width:auto;">
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -253,117 +260,69 @@
             </div>
         </div>
     </nav>
-            <header id="home" class="hero"></header>
-    <!-- OUR APPROACH SECTION -->
-    <section class="approach-section">
-        <div class="container">
-            <h2 class="approach-title">OUR APPROACH</h2>
-            <div class="approach-content">
-                <p>
-                    At Syro Tech Hub, engineering is in our DNA. We lead with design and architecture to deliver a portfolio of next-generation offerings and services that blend our deep domain expertise with cutting-edge technology. As an innovation-led, platform-driven company with human-centric intelligence, we help global enterprises modernize, infuse AI, and scale with agility. Our specialized technology "Tribes" are focused on client outcomes and embed artificial intelligence and autonomy into every layer of the enterprise technology and process stack.
-                </p>
-                <p>
-                    We believe that "Great Technology Is Built on Great Vision" and built on this belief is Syro Core™, our breakthrough digital platform that orchestrates a powerful mix of Syro-built solutions, partner technologies, and client assets within a single ecosystem. Powered by a dynamic and ever-evolving knowledge base, the platform drives intelligent engineering to deliver compounding value, enable continuous transformation, and ensure that tech-driven change is fast, accurate, and aligned with long-term business goals.
-                </p>
-                <p>
-                    At the heart of our approach is customer-centricity, which is reflected in our proprietary Digital-First™ transformation framework. The framework uses the exponential power of cloud and cognitive technology to deliver hyper-personalized digital experiences and drive customer-centric transformation. Leveraging domain-contextualized offerings driven by deep expertise and our cross-functional teams, we help clients build and scale faster.
-                </p>
-                <p>
-                    At Syro Tech Hub, we thrive on innovation. We turn ideas into action, delivering solutions like the Neo series to help enterprises stay efficient and competitive in a digitally-driven world.
-                </p>
+    <header id="home" class="hero">
+        <div class="hero-inner">
+            <!-- LEFT SIDE: Background Video -->
+            <div class="hero-img-panel">
+                <img src="heroimg.avif" alt="Syro Tech Hub - Professional IT Solutions" class="hero-video" style="object-fit: cover;">
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL"><span>PostgreSQL</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=mysql" alt="MySQL"><span>MySQL</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=firebase" alt="Firebase"><span>Firebase</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=flutter" alt="Flutter"><span>Flutter</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=react" alt="React Native"><span>React Native</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=kotlin" alt="Kotlin"><span>Kotlin</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=swift" alt="Swift"><span>Swift</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=vercel" alt="Vercel"><span>Vercel</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=netlify" alt="Netlify"><span>Netlify</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=aws" alt="AWS"><span>AWS</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=cloudflare" alt="Cloudflare"><span>Cloudflare</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=github" alt="GitHub"><span>GitHub</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=gitlab" alt="GitLab"><span>GitLab</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=bitbucket" alt="Bitbucket"><span>Bitbucket</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=wordpress" alt="WordPress"><span>WordPress</span></div>
+                <div class="tech-item"><img src="https://cdn.simpleicons.org/webflow/4471E1" alt="Webflow"><span>Webflow</span></div>
+                <div class="tech-item"><img src="https://cdn.simpleicons.org/framer/0055FF" alt="Framer"><span>Framer</span></div>
+                <div class="tech-item"><img src="https://cdn.simpleicons.org/shopify/7AB55C" alt="Shopify"><span>Shopify</span></div>
+                <div class="tech-item"><img src="https://cdn.simpleicons.org/googleanalytics/E37400" alt="Google Analytics"><span>Google Analytics</span></div>
+                <div class="tech-item"><img src="https://cdn.simpleicons.org/razorpay/3395FF" alt="Razorpay"><span>Razorpay</span></div>
+                <div class="tech-item"><img src="https://cdn.simpleicons.org/stripe/6772E5" alt="Stripe"><span>Stripe</span></div>
+                <div class="tech-item"><img src="https://cdn.simpleicons.org/paypal/003087" alt="PayPal"><span>PayPal</span></div>
             </div>
-                    <div class="approach-grid">
-                <div class="approach-card">
-                    <h3>Syro Digital-First™ Approach</h3>
-                    <div class="accent-line"></div>
-                    <p>Syro adopts a customer-in view to transform enterprises using our industry-specific Digital Core™ framework, which utilizes the power of cloud and cognitive to provide hyper-personalized digital experiences to clients and end customers.</p>
-                    <a href="service.html" class="card-link">
-                        <span class="link-text">KNOW MORE</span>
-                        <span class="link-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                        </span>
-                    </a>
-                </div>
-                <div class="approach-card">
-                    <h3>Service Transformation</h3>
-                    <div class="accent-line"></div>
-                    <p>Syro Service Transformation solutions offer an integrated approach to enable enterprises to achieve scalable, digital, future-ready operations.</p>
-                    <a href="service.html" class="card-link">
-                        <span class="link-text">KNOW MORE</span>
-                        <span class="link-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                        </span>
-                    </a>
-                </div>
-                <div class="approach-card">
-                    <h3>Innovation</h3>
-                    <div class="accent-line"></div>
-                    <p>At Syro we have a relentless and unwavering focus on innovation. We endeavor to apply innovation to business and help generate value and constantly challenge ourselves and work, to accelerate the next paradigms of innovation.</p>
-                    <a href="service.html" class="card-link">
-                        <span class="link-text">KNOW MORE</span>
-                        <span class="link-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                        </span>
-                    </a>
-                </div>
-            </div>
-            </div>
+        </div>
     </section>
 
-            <!-- OUR OFFERINGS SECTION -->
-    <section id="offerings" class="offerings-section-dark">
+    <!-- OUR OFFERINGS SECTION -->
+    <section id="offerings" class="offerings-section">
         <div class="container">
-            <h2 class="offerings-title-dark">OUR OFFERINGS OUR HEROES</h2>
-            <div class="offerings-grid-dark">
-                <!-- Row 1 -->
-                <div class="offering-item">
-                    <div class="offering-icon-blue">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="4" r="1"/><circle cx="12" cy="20" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="20" cy="12" r="1"/><path d="M12 5v4M12 15v4M5 12h4M15 12h4"/><path d="m7.1 7.1 1.4 1.4M15.5 15.5l1.4 1.4M7.1 16.9l1.4-1.4M15.5 8.5l1.4-1.4"/></svg>
+            <h2 class="offerings-title">OUR OFFERINGS</h2>
+            <div class="offerings-grid">
+                <div class="offering-card">
+                    <div class="offering-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
                     </div>
-                    <h3>Next-Gen Data</h3>
+                    <h3>Intelligent Solutions</h3>
+                    <p>Building high-performance software tailored to your specific business needs with cutting-edge technology.</p>
                 </div>
-                <div class="offering-item">
-                    <div class="offering-icon-blue">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M9 6h6M9 10h6M12 14v4"/><circle cx="12" cy="18" r="2"/></svg>
+                <div class="offering-card">
+                    <div class="offering-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
                     </div>
-                    <h3>Cyber Security</h3>
+                    <h3>Global Digital Strategy</h3>
+                    <p>Transforming your presence with data-driven digital strategies that reach audiences across the globe.</p>
                 </div>
-                <div class="offering-item">
-                    <div class="offering-icon-blue">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12S6.48 2 12 2z"/><path d="M12 6v6l4 2"/><circle cx="12" cy="12" r="3"/><path d="m16 8-1.5 1.5M8 16l1.5-1.5"/></svg>
+                <div class="offering-card">
+                    <div class="offering-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                     </div>
-                    <h3>Modernization</h3>
+                    <h3>Enterprise Security</h3>
+                    <p>Robust security frameworks to protect your valuable assets and ensure business continuity.</p>
                 </div>
-                <div class="offering-item">
-                    <div class="offering-icon-blue">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h5v5H2zM17 3h5v5h-5zM2 16h5v5H2zM17 16h5v5h-5z"/><path d="M7 5.5h10M7 18.5h10M4.5 8v8M19.5 8v8"/></svg>
+                <div class="offering-card">
+                    <div class="offering-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
                     </div>
-                    <h3>Experience Design</h3>
-                </div>
-                <!-- Row 2 -->
-                <div class="offering-item">
-                    <div class="offering-icon-blue">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/><circle cx="12" cy="12" r="5"/></svg>
-                    </div>
-                    <h3>NextOps</h3>
-                </div>
-                <div class="offering-item">
-                    <div class="offering-icon-blue">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17.5h18M3 6.5h18"/><path d="M7 6.5v11M17 6.5v11M12 6.5v11"/><path d="M3 12h18"/><circle cx="12" cy="12" r="2"/></svg>
-                    </div>
-                    <h3>IT Value Stream Acceleration</h3>
-                </div>
-                <div class="offering-item">
-                    <div class="offering-icon-blue">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><circle cx="12" cy="12" r="3"/><path d="m15 9-6 6"/></svg>
-                    </div>
-                    <h3>Agile IT Ops</h3>
-                </div>
-                <div class="offering-item">
-                    <div class="offering-icon-blue">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9zM12 4v5M12 15v5M4 12h5M15 12h5"/></svg>
-                    </div>
-                    <h3>Platforms & Protocols (XAAS)</h3>
+                    <h3>Managed IT Services</h3>
+                    <p>Proactive monitoring and support to keep your systems running at peak performance 24/7.</p>
                 </div>
             </div>
         </div>
@@ -435,93 +394,52 @@
 
     <!-- OUR TECHNOLOGY STACK -->
     <section class="tech-stack-section">
-        <div class="container">
+        <div class="tech-stack-container">
             <h2 class="tech-stack-title">OUR TECHNOLOGY STACK</h2>
             <p class="tech-stack-subtitle">We use the world's most advanced technologies to build your digital future.</p>
-            
-            <div class="tech-table-box">
-                <div class="tech-table-grid">
-                    <!-- Row 1 -->
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=html" alt="HTML5"><span>HTML5</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=css" alt="CSS3"><span>CSS3</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=js" alt="JavaScript"><span>JavaScript</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=ts" alt="TypeScript"><span>TypeScript</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=react" alt="React"><span>React</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=angular" alt="Angular"><span>Angular</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=vue" alt="Vue.js"><span>Vue.js</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=nextjs" alt="Next.js"><span>Next.js</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=nuxtjs" alt="Nuxt.js"><span>Nuxt.js</span></div>
 
-                    <!-- Row 2 -->
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap"><span>Bootstrap</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind CSS"><span>Tailwind</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=sass" alt="Sass"><span>Sass</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js"><span>Node.js</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=express" alt="Express.js"><span>Express.js</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=django" alt="Django"><span>Django</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=flask" alt="Flask"><span>Flask</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=laravel" alt="Laravel"><span>Laravel</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=spring" alt="Spring Boot"><span>Spring Boot</span></div>
-
-                    <!-- Row 3 -->
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=php" alt="PHP"><span>PHP</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=python" alt="Python"><span>Python</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=java" alt="Java"><span>Java</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=cpp" alt="C++"><span>C++</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=go" alt="Go"><span>Go</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=rust" alt="Rust"><span>Rust</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=ruby" alt="Ruby"><span>Ruby</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=flutter" alt="Flutter"><span>Flutter</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=dart" alt="Dart"><span>Dart</span></div>
-
-                    <!-- Row 4 -->
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=swift" alt="Swift"><span>Swift</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=kotlin" alt="Kotlin"><span>Kotlin</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB"><span>MongoDB</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=mysql" alt="MySQL"><span>MySQL</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL"><span>Postgres</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=redis" alt="Redis"><span>Redis</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=sqlite" alt="SQLite"><span>SQLite</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=firebase" alt="Firebase"><span>Firebase</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=aws" alt="AWS"><span>AWS</span></div>
-
-                    <!-- Row 5 -->
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=gcp" alt="GCP"><span>GCP</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=azure" alt="Azure"><span>Azure</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=vercel" alt="Vercel"><span>Vercel</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=netlify" alt="Netlify"><span>Netlify</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=heroku" alt="Heroku"><span>Heroku</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=docker" alt="Docker"><span>Docker</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=kubernetes" alt="Kubernetes"><span>K8s</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=jenkins" alt="Jenkins"><span>Jenkins</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=githubactions" alt="Actions"><span>Actions</span></div>
-
-                    <!-- Row 6 -->
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=git" alt="Git"><span>Git</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=github" alt="GitHub"><span>GitHub</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=gitlab" alt="GitLab"><span>GitLab</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=bitbucket" alt="Bitbucket"><span>Bitbucket</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=figma" alt="Figma"><span>Figma</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=xd" alt="Adobe XD"><span>Adobe XD</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=ps" alt="Photoshop"><span>Photoshop</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=ai" alt="Illustrator"><span>Illustrator</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=ae" alt="After Effects"><span>After Effects</span></div>
-
-                    <!-- Row 7 -->
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=pr" alt="Premiere Pro"><span>Premiere</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=vscode" alt="VS Code"><span>VS Code</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=webstorm" alt="WebStorm"><span>WebStorm</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=sublime" alt="Sublime"><span>Sublime</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=postman" alt="Postman"><span>Postman</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=graphql" alt="GraphQL"><span>GraphQL</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=redux" alt="Redux"><span>Redux</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=vite" alt="Vite"><span>Vite</span></div>
-                    <div class="tech-table-cell"><img src="https://skillicons.dev/icons?i=linux" alt="Linux"><span>Linux</span></div>
-                </div>
+                        <div class="unified-tech-grid">
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL"><span>POSTGRESQL</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=mysql" alt="MySQL"><span>MYSQL</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=firebase" alt="Firebase"><span>FIREBASE</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=flutter" alt="Flutter"><span>FLUTTER</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=react" alt="React Native"><span>REACT NATIVE</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=kotlin" alt="Kotlin"><span>KOTLIN</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=swift" alt="Swift"><span>SWIFT</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=vercel" alt="Vercel"><span>VERCEL</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=netlify" alt="Netlify"><span>NETLIFY</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=aws" alt="AWS"><span>AWS</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=cloudflare" alt="Cloudflare"><span>CLOUDFLARE</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=github" alt="GitHub"><span>GITHUB</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=gitlab" alt="GitLab"><span>GITLAB</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=bitbucket" alt="Bitbucket"><span>BITBUCKET</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=wordpress" alt="WordPress"><span>WORDPRESS</span></div>
+            </div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=xd" alt="Adobe XD"><span>Adobe XD</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=ps" alt="Photoshop"><span>Photoshop</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=ai" alt="Illustrator"><span>Illustrator</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=ae" alt="After Effects"><span>After Effects</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=pr" alt="Premiere Pro"><span>Premiere Pro</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=html" alt="HTML5"><span>HTML5</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=css" alt="CSS3"><span>CSS3</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=js" alt="JavaScript"><span>JavaScript</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=ts" alt="TypeScript"><span>TypeScript</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=react" alt="React"><span>React</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=nextjs" alt="Next.js"><span>Next.js</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js"><span>Node.js</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=express" alt="Express"><span>Express</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB"><span>MongoDB</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=python" alt="Python"><span>Python</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=django" alt="Django"><span>Django</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=flutter" alt="Flutter"><span>Flutter</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=dart" alt="Dart"><span>Dart</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=firebase" alt="Firebase"><span>Firebase</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=aws" alt="AWS"><span>AWS</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=docker" alt="Docker"><span>Docker</span></div>
+                <div class="tech-item"><img src="https://skillicons.dev/icons?i=github" alt="GitHub"><span>GitHub</span></div>
             </div>
         </div>
-
-
+    </section>
     <!-- THE BIG THINKERS SECTION -->
     <section class="thinkers-section">
         <div class="thinkers-container">
@@ -545,34 +463,26 @@
             </div>
         </div>
     </section>
-    
-    <!-- WHY CHOOSE US SECTION -->
-    <section class="why-choose-us-section">
-        <div class="why-choose-visual-bg"></div>
-        <div class="why-choose-container">
-            <div class="why-choose-header">
-                <h2 class="why-choose-title">Why Choose SyroTechHub</h2>
-            </div>
-            <div class="why-choose-content">
-                <p class="why-choose-para">
-                    At Syrotechhub, we focus on delivering high-quality digital solutions that are not only visually appealing but also technically strong and scalable. Our team works with modern technologies and follows industry best practices to ensure every project meets performance, security, and usability standards. We take time to understand each client’s business goals and transform them into effective digital products that drive real results. From planning and design to development and deployment, every stage is handled with precision, attention to detail, and a commitment to excellence.
-                </p>
-                <p class="why-choose-para">
-                    What sets Syrotechhub apart is our dedication to client satisfaction and long-term success. We prioritize clear communication, timely delivery, and continuous support to build strong and lasting relationships with our clients. Our approach combines innovation, creativity, and problem-solving to deliver solutions that stand out in a competitive market. Whether it’s a simple website or a complex application, we ensure that every project is tailored to meet unique requirements while maintaining affordability and reliability. Partnering with Syrotechhub means choosing a team that is passionate about helping your business grow through technology.
-                </p>
-            </div>
-        </div>
-    </section>
     <footer class="footer" id="contact">
         <div class="footer-inner">
             <div class="footer-top">
                 <div class="footer-brand">
-
+                    <div class="footer-brand-name">
                         <img src="logo.png" alt="Syro Tech Hub - Leading IT Company in Tamil Nadu Footer Logo" title="Syro Tech Hub" class="footer-logo">
-
-
-
-
+                        <span class="footer-brand-text" title="Syro Tech Hub">Syro Tech Hub</span>
+                    </div>
+                    <p class="footer-tagline"><strong>Syro Tech Hub</strong>: Building the digital future of Tamil Nadu,<br>one line of code at a time.</p>
+                    <div class="footer-socials">
+                        <a href="https://www.instagram.com/syro.techhub.offi?igsh=a3U1MnNsNGJsMDE=" target="_blank" aria-label="Instagram" class="social-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/karthik-ayyathurai-b548a83a1?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" aria-label="LinkedIn" class="social-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        </a>
+                        <a href="https://youtube.com/@syrotechhub?si=eOvnhHRPf5x60IDU" target="_blank" aria-label="YouTube" class="social-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+                        </a>
+                    </div>
                 </div>
                 <div class="footer-links-group">
                     <h4>Quick Links</h4>
@@ -652,17 +562,6 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
 
 
 

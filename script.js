@@ -1,13 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Splash Screen Logic (Using window 'load' for full resource loading)
-    window.addEventListener('load', () => {
-        const splashScreen = document.getElementById('splash-screen');
-        if (splashScreen) {
-            setTimeout(() => {
-                splashScreen.classList.add('splash-hidden');
-            }, 3500); // Increased to 3.5s for the cinematic logo reveal transition
+    // Splash Screen Logic (Using window 'load' for full resource loading with a safety fallback)
+    const splashScreen = document.getElementById('splash-screen');
+    
+    const hideSplash = () => {
+        if (splashScreen && !splashScreen.classList.contains('splash-hidden')) {
+            splashScreen.classList.add('splash-hidden');
         }
+    };
+
+    // Attempt to hide on window load
+    window.addEventListener('load', () => {
+        setTimeout(hideSplash, 1500); // Small delay after load for smoothness
     });
+
+    // Safety fallback: Hide splash screen after 5 seconds maximum regardless of load status
+    setTimeout(hideSplash, 5000);
 
     // Mobile Menu Toggle
     const mobileMenu = document.getElementById('mobile-menu');
@@ -84,37 +91,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Scroll Reveal Interaction
     const observerOptions = {
-        threshold: 0.1
+        threshold: 0.15,
+        rootMargin: '0px 0px -50px 0px'
     };
-
+ 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('reveal-active');
+                entry.target.classList.add('active');
+                // Optional: stop observing once revealed
+                // observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
-
-    const revealElements = document.querySelectorAll('.service-card, .team-card, .portfolio-card, .highlight-item, .section-title, .training-content, .training-visual');
+ 
+    // Target all major sections and components for a site-wide animation feel
+    const revealElements = document.querySelectorAll(
+        '.approach-section, .offerings-section-dark, .tech-section, .thinkers-section, ' +
+        '.why-choose-us-section, .footer, .approach-card, .offering-item, .tech-table-grid'
+    );
+    
     revealElements.forEach(el => {
-        el.classList.add('reveal-hidden');
+        el.classList.add('reveal');
         observer.observe(el);
     });
 
-    // Add necessary CSS for reveal animations
-    const style = document.createElement('style');
-    style.textContent = `
-        .reveal-hidden {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s ease-out;
-        }
-        .reveal-active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    `;
-    document.head.appendChild(style);
+
     // Generic Counter Animation
     const animateCounters = (elements) => {
         elements.forEach(counter => {
@@ -172,6 +174,44 @@ document.addEventListener('DOMContentLoaded', () => {
             videoPlayer.src = playlist[currentVideoIndex];
             videoPlayer.load();
             videoPlayer.play();
+        });
+    }
+
+    // Cookie Consent Logic
+    const cookieBanner = document.getElementById('cookie-banner');
+    const acceptBtn = document.getElementById('cookie-accept');
+    const rejectBtn = document.getElementById('cookie-reject');
+    const manageBtn = document.getElementById('cookie-manage');
+
+    if (cookieBanner) {
+        // Check if user has already made a choice
+        const cookieChoice = localStorage.getItem('cookie-consent');
+        
+        if (!cookieChoice) {
+            // Show banner after a short delay
+            setTimeout(() => {
+                cookieBanner.classList.add('show');
+            }, 2000);
+        }
+
+        const hideBanner = () => {
+            cookieBanner.classList.remove('show');
+        };
+
+        acceptBtn.addEventListener('click', () => {
+            localStorage.setItem('cookie-consent', 'accepted');
+            hideBanner();
+        });
+
+        rejectBtn.addEventListener('click', () => {
+            localStorage.setItem('cookie-consent', 'rejected');
+            hideBanner();
+        });
+
+        manageBtn.addEventListener('click', () => {
+            alert('Cookie Preferences Managed. (This is a demonstration - in a real app, this would open a detailed settings modal)');
+            localStorage.setItem('cookie-consent', 'managed');
+            hideBanner();
         });
     }
 });
