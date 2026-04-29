@@ -3,11 +3,11 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <!-- ===== FAVICON OPTIMIZATION FOR GOOGLE SEARCH ===== -->
-    <link rel="icon" type="image/png" sizes="32x32" href="https://syrotechhub.in/favicon.png?v=3">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://syrotechhub.in/favicon.png?v=3">
-    <link rel="icon" type="image/png" sizes="48x48" href="https://syrotechhub.in/favicon.png?v=3">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://syrotechhub.in/favicon.png?v=3">
-    <link rel="shortcut icon" href="https://syrotechhub.in/favicon.png?v=3">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+    <link rel="shortcut icon" href="favicon.png">
     <!-- ===== UNIQUE TITLE ===== -->
     <title>IT Services in Chennai | Web & App Development Company - Syro Tech Hub</title>
     <link rel="canonical" href="https://syrotechhub.in/service.html">
@@ -97,6 +97,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         .service-hero {
             padding: 5rem 0 0; /* Clear space for fixed navbar */
@@ -174,8 +175,7 @@
     <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <img src="logo.png" alt="Syro Tech Hub - Main Brand Logo" title="Syro Tech Hub IT Services" id="nav-logo">
-                <span title="Syro Tech Hub">Syro Tech Hub</span>
+                <img src="logo.png" alt="Syro Tech Hub - Main Brand Logo" title="Syro Tech Hub IT Services" id="nav-logo" style="height:85px;width:auto;">
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -184,6 +184,7 @@
                 <li><a href="join.html" class="btn-nav-red">Get Started</a></li>
             </ul>
             <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
@@ -655,20 +656,26 @@
         </div>
     </footer>
 
-    <!-- WhatsApp Floating Button -->
-    <a href="join.html" class="whatsapp-float">
-        <svg fill="currentColor" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M12.031 6.172c-2.32 0-4.218 1.898-4.218 4.218 0 1.018.361 1.95.963 2.686l-.655 2.399 2.456-.644c.677.404 1.465.641 2.31.641 2.32 0 4.218-1.898 4.218-4.218 0-2.32-1.898-4.218-4.218-4.218zM15.424 12.82c-.156.44-1.286 1.139-1.286 1.139-.33.167-.714.286-1.125.286-1.045 0-2.433-1.012-3.232-1.811-.799-.799-1.811-2.187-1.811-3.232 0-.411.119-.795.286-1.125 0 0 .699-1.13.139-1.286-.44-.156-1.218-.088-1.574-.088-.415 0-.825.215-1.096.536-.464.551-.62 1.442-.26 2.404.646 1.72 2.228 3.734 3.793 5.299 1.565 1.565 3.579 3.147 5.299 3.793.962.36 1.853.204 2.404-.26.321-.271.536-.681.536-1.096 0-.356.068-1.134-.088-1.574-.156-.44-1.286-1.139-1.286-1.139-.33-.167-.714-.286-1.125-.286zM22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10z"/>
-        </svg>
-        <span>Join Us</span>
-    </a>
-
-    <!-- ===== RANKING BOOSTER ENGINE - SEARCH AUTHORITY MATRIX ===== -->
-    <div style="display:none; visibility:hidden; font-size:1px; line-height:1px; color:transparent; position:absolute; width:1px; height:1px; overflow:hidden;" aria-hidden="true">
-        <h3>IT Services by Syro Tech Hub - Best IT Company in Chennai</h3>
-        <p>Looking for the best IT company in India? Syro Tech Hub provides the highest quality software services. Web development company in Chennai. Best app development company in India. Custom software development Chennai. UI UX design agency Tamil Nadu. Digital marketing services Chennai. Search engine optimization India. Video editing services Chennai. Poster design Tamil Nadu. Syro Tech Hub official services. Syrotechhub solutions. Best tech startup for business growth. Hire software developers in Chennai. Best web agency in India. Syrotechhub reviews. Syro company profile. IT solutions for startups Chennai.</p>
-        <p>Services: Web design, Mobile apps, SEO, Digital marketing, Graphics, Video production, IT training, Career placement, Cloud solutions, AI integration, Syro Tech Hub experts.</p>
+    <!-- Left Sidebar Social Media -->
+    <div class="social-sidebar-left">
+        <a href="https://www.facebook.com/share/157G812Lqj/" target="_blank" class="social-box facebook" title="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://youtube.com/@syrotechhub" target="_blank" class="social-box youtube" title="YouTube">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/karthik-ayyathurai-b548a83a1" target="_blank" class="social-box linkedin" title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.instagram.com/syro.techhub.offi" target="_blank" class="social-box instagram" title="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
     </div>
+    <!-- WhatsApp Floating Tab (Right) -->
+    <a href="join.html" class="whatsapp-float-tab">
+        <div class="whatsapp-icon-box"><i class="fab fa-whatsapp"></i></div>
+        <span class="whatsapp-text">CONTACT NOW</span>
+    </a>
     <script src="script.js"></script>
 </body>
 </html>
